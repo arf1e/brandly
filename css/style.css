@@ -72,6 +72,7 @@ nav li {
   background-size: cover;
   padding-bottom: 300px;
   position: relative;
+  margin-bottom: 90px;
 }
 
 .header-content {
@@ -202,6 +203,155 @@ nav li {
 
 #slide-4:checked~ .slider-wrap .slidescreen-4 {
   display: block;
+}
+
+main h2 {
+  position: relative; 
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.222rem;
+  text-align: center;
+  line-height: 1.056rem;
+}
+
+main h2::before {
+  width: 111px;
+  height: 3px;
+  content: '';
+  background-color: #dc0000;
+  border-left: 1px solid #e88d8d;
+  border-right: 1px solid #e88d8d;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -55px;
+}
+
+main h2::after {
+  width: 111px;
+  height: 3px;
+  content: '';
+  background-color: #dc0000;
+  border-left: 1px solid #e88d8d;
+  border-right: 1px solid #e88d8d;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -55px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+}
+
+.products .product {
+  width: 370px;
+  height: 420px;
+  box-sizing: border-box;
+  padding: 31px 28px;
+}
+
+.product.men {
+  background-image: url(../img/product-men.jpg);
+  background-color: #434550;
+}
+
+.product .product-info {
+  border: 3px solid white;
+  height: 100%;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.222rem;
+  text-align: center;
+  padding-top: 46%;
+  box-sizing: border-box;
+}
+
+.product.woman {
+  background-image: url(../img/product-woman.jpg);
+  background-color: #473132;
+}
+
+.product.watches {
+  background-image: url(../img/product-watch.jpg);
+  background-color: #1c1e28;
+}
+
+.discounts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.discounts .discount {
+  width: 570px;
+  height: 420px;
+}
+
+.discount.autumn {
+  background-image: url(../img/autumn-background.jpg);
+}
+
+.discount.spirit {
+  background-image: url(../img/spirit-background.jpg);
+}
+
+.discount-info {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: 900;
+  margin: 140px auto;
+}
+
+.discount.autumn .discount-info {
+  width: 290px;
+}
+
+.discount.spirit .discount-info {
+  width: 435px;
+}
+
+.discount.spirit .discount-info {
+  text-transform: uppercase;
+}
+.discount-info::before,
+.discount-info::after {
+  content: '';
+  position: absolute;
+  width: 192px;
+  height: 1px;
+  background-color: white;
+  left: 50%;
+  margin-left: -97px;
+}
+
+.discount-info::before {
+  top: -22px;
+}
+
+.discount-info::after {
+  bottom: -20px;
+}
+
+.shop-new {
+  margin-bottom: 60px;
+}
+
+.trending {
+  background-image: url(../img/trending-background.jpg);
+  padding-top: 60px;
+}
+
+
+.main-footer {
+  background-image: url(../img/form-background.jpg);
 }
 
 

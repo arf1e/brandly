@@ -9,6 +9,7 @@
   <body>
     <header class="main-header">
       <section class="container">
+        <!-- Главная навигация: -->
         <nav class="main-navigation">
           <a href="#" class="logo">BRAND<span>LY</span></a>
           <ul class="navigation-links">
@@ -21,6 +22,7 @@
           </ul>
         </nav>
           <div class="header-content">
+            <!-- Переключение слайдов: -->
               <input type="radio" name="slider" id="slide-1">
               <input type="radio" name="slider" id="slide-2">
               <input type="radio" name="slider" id="slide-3" checked>
@@ -32,28 +34,29 @@
               <label for="slide-4"></label>
             </div>
             <section class="slider-wrap">
+              <!-- Слайды: -->
               <div class="slidescreen slidescreen-1">
                 <span>SPRING / SUMMER COLLECTION</span>
                 <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-                <p>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</p>
+                <p>TRENDING NEW ITEMS, FROM CREATORS AROUND THE WORLD</p>
                 <a class="btn header-btn">SHOP NOW</a>
               </div>
               <div class="slidescreen slidescreen-2">
-                <span>SPRING / SUMMER COLLECTION</span>
+                <span>SUMMER / AUTUMN COLLECTION</span>
                 <h2>UP TO 50% DISCOUNT ON NEW ARRIVALS</h2>
-                <p>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</p>
+                <p>TRENDING NEW ITEMS, FROM CREATORS AROUND THE WORLD</p>
                 <a class="btn header-btn">SHOP NOW</a>
               </div>
               <div class="slidescreen slidescreen-3">
-                <span>SPRING / SUMMER COLLECTION</span>
+                <span>AUTUMN / WINTER COLLECTION</span>
                 <h2>UP TO 30% DISCOUNT ON NEW ARRIVALS</h2>
-                <p>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</p>
+                <p>TRENDING NEW ITEMS, FROM CREATORS AROUND THE WORLD</p>
                 <a class="btn header-btn">SHOP NOW</a>
               </div>
               <div class="slidescreen slidescreen-4">
-                <span>SPRING / SUMMER COLLECTION</span>
+                <span>WINTER / SPRING COLLECTION</span>
                 <h2>UP TO 100% DISCOUNT ON NEW ARRIVALS</h2>
-                <p>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</p>
+                <p>TRENDING NEW ITEMS, FROM CREATORS AROUND THE WORLD</p>
                 <a class="btn header-btn">SHOP NOW</a>
               </div>
             </section>
@@ -64,13 +67,13 @@
       <section class="shop-new container">
         <h2>Latest Products</h2>
         <div class="products">
-          <article class="product men">Men</article>
-          <article class="product woman">Woman</article>
-          <article class="product watches">Watches</article>
+          <article class="product men"><div class="product-info">Men</div></article>
+          <article class="product woman"><div class="product-info">Woman</div></article>
+          <article class="product watches"><div class="product-info">Watches</div></article>
         </div>
         <div class="discounts">
-          <article class="discount autumn">40% Off New Autumn Collection</article>
-          <article class="discount spirit">MEGA SALE ON ITEMS FROM SPIRIT COLLECTION</article>
+          <article class="discount autumn"><div class="discount-info">40% Off <br> New Autumn Collection</div></article>
+            <article class="discount spirit"><div class="discount-info">MEGA SALE <br>ON ITEMS FROM SPIRIT COLLECTION</div></article>
         </div>
       </section>
       <section class="trending">
@@ -152,11 +155,13 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p>Subscribe to our newsletter to receive latest news and offers</p>
-      <form class="subscription">
-        <span><input type="text" name="email" placeholder="EMAIL ADDRESS"></span>
-        <input type="submit" value="Subscribe" class="btn">
-      </form>
+      <div class="container">
+        <p>Subscribe to our newsletter to receive latest news and offers</p>
+        <form class="subscription">
+          <span><input type="text" name="email" placeholder="EMAIL ADDRESS"></span>
+          <input type="submit" value="Subscribe" class="btn">
+        </form>
+      </div>
     </footer>
   </body>
 </html>
