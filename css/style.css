@@ -1,0 +1,209 @@
+/* REM CALCULATOR: 
+18
+48,19,30,60,40,45,16,36,14,50,70 */
+
+/* Подключение нестандартного шрифта, которого не было на Google Fonts */
+@font-face {
+  font-family: "Bebas Neue", serif;
+  src: local("Bebas Neue"),
+       url(../fonts/BebasNeue.otf) format('opentype');
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Bebas Neue';
+  font-weight: 600;
+  font-size: 2.667rem;
+  color: #dc0000;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.navigation-links li:not(:last-child) a {
+  margin-right: 3rem;
+}
+
+.main-header {
+  background-image: url('../img/header-background.jpg');
+  background-color: #9b9ca1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 300px;
+  position: relative;
+}
+
+.header-content {
+  color: white;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.header-content span,
+.header-content p {
+  font-size: 1.667rem;
+  line-height: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.header-content span {
+  letter-spacing: 0.7778rem;
+}
+
+.header-content p {
+  margin-bottom: 3.889rem;
+}
+
+.header-content h2 {
+  font-size: 2.5rem;
+  line-height: 1.056rem;
+  margin: 0;
+  margin-top: 2.778rem;
+  margin-bottom: 2.778rem;
+}
+
+.btn {
+  box-sizing: border-box; 
+  /* Обращать внимание на маргины соседних 
+  элементов: будут больше, т.к. 
+  границы теперь на тексте. */
+  text-decoration: none;
+  border: 2px solid white;
+  font-family: 'Lato', sans-serif;
+  font-weight: black;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-btn {
+  border-color: white;
+  font-size: 1rem;
+  padding: 20px 50px;
+  margin-top: 50px;
+}
+
+.header-btn:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+}
+
+.slider-controls {
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-controls label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+
+#slide-1:checked~ .slider-controls label[for=slide-1] {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+}
+
+#slide-2:checked~ .slider-controls label[for=slide-2] {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+}
+
+#slide-3:checked~ .slider-controls label[for=slide-3] {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+}
+
+#slide-4:checked~ .slider-controls label[for=slide-4] {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+}
+
+.header-content input {
+  display: none;
+}
+
+.slidescreen {
+  display: none;
+}
+
+#slide-1:checked~ .slider-wrap .slidescreen-1 {
+  display: block;
+}
+
+#slide-2:checked~ .slider-wrap .slidescreen-2 {
+  display: block;
+}
+
+#slide-3:checked~ .slider-wrap .slidescreen-3 {
+  display: block;
+}
+
+#slide-4:checked~ .slider-wrap .slidescreen-4 {
+  display: block;
+}
+
+
+
+
