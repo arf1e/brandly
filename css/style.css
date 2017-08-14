@@ -337,7 +337,7 @@ main h2::after {
 }
 
 .discount-info::after {
-  bottom: -20px;
+  bottom: -22px;
 }
 
 .shop-new {
@@ -349,9 +349,158 @@ main h2::after {
   padding-top: 60px;
 }
 
+.trending input[type="radio"] {
+  display: none;
+}
+
+.trending-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-product .product-info {
+  max-width: 570px;
+}
+
+header .product-name,
+header .topic {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.667rem;
+  line-height: 1.667rem;
+  text-transform: uppercase;
+  color: #dc0000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header .collection, 
+header .author {
+  display: block; /* Я генста, я блочным делаю спан! Посмотри на мой код - я хулиган! */
+  font-size: 0.8889rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+header:not(.main-header) {
+  margin-bottom: 60px;
+}
+
+.product-description header {
+  position: relative;
+}
+
+.product-description header::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  bottom: -31px;
+}
+
+.product-description,
+.blog-post {
+  font-family: 'Lato', sans-serif;
+  color: #909090;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-description p:first-of-type {
+  margin-bottom: 35px;
+}
+
+.product-description p:last-of-type {
+  margin-top: 0;
+}
+.blog-post {
+  max-width: 570px;
+}
+
+.sizing {
+  margin-top: 90px;
+}
+
+.sizing input {
+  display: block;
+}
+
+.sizing label,
+.shopping-links a{
+  padding: 19px 27px;
+  border: 1px solid #333333;
+  font-weight: 700;
+  font-size: 0.8889rem;
+  transition: 0.3s;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.sizing label:last-child {
+  width: 70px;
+  height: 50px;
+  padding: 20px;
+}
+
+label[for=size-xl] {
+  width: 70px;
+  height: 50px;
+  padding: 20px 22px;
+}
+
+.shopping-links a{
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 170px;
+  padding: 20px 40px;
+}
+
+.sizing label:hover,
+.shopping-links .btn:hover {
+  border-color: #dc0000;
+}
+
+#size-m:checked~ label[for="size-m"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-l:checked~ label[for="size-l"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xl:checked~ label[for="size-xl"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xxl:checked~ label[for="size-xxl"] {
+  background-color: #333333;
+  color: white;
+}
+
+.shopping-links {
+  margin-top: 70px;
+}
+
+.shopping-links .btn:active {
+  background-color: #333333;
+  color: white;
+}
+
+
 
 .main-footer {
   background-image: url(../img/form-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
