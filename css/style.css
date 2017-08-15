@@ -246,6 +246,10 @@ main h2::after {
   margin-top: 95px;
 }
 
+.products a {
+  text-decoration: none;
+}
+
 .products .product {
   width: 370px;
   height: 420px;
@@ -346,9 +350,11 @@ main h2::after {
 
 .trending {
   background-image: url(../img/trending-background.jpg);
+  background-size: cover;
   padding-top: 60px;
   padding-bottom: 130px;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .trending h2 {
@@ -563,13 +569,95 @@ label[for=size-xl] {
   display: flex;
 }
 
+.blog h2 {
+  margin-bottom: 102px;
+}
 
+.blog .description {
+  margin-bottom: 85px;
+}
+
+.blog-content {
+  margin-bottom: 80px;
+}
+
+.blog-post .btn {
+  width: 170px;
+  height: 51px;
+  padding: 19px 37px;
+  border: 1px solid #333333;
+  color: #333333;
+  font-size: 0.8889rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog-post .btn:hover {
+  background-color: #333333;
+  color: white;
+}
 
 .main-footer {
   background-image: url(../img/form-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 75px 0;
+  margin-bottom: 160px;
 }
+
+.main-footer p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.main-footer form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer input[type=email] {
+  width: 640px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 300;
+  font-size: 0.7222rem;
+  padding-left: 80px;
+  text-transform: uppercase;
+  background-image: url(../img/email.svg);
+  background-repeat: no-repeat;
+  background-position: 30px 21px;
+}
+
+.main-footer input[type=email]::placeholder {
+  color: white;
+  font-weight: 300;
+  font-size: 0.7222rem;
+}
+
+.main-footer .btn {
+  width: 270px;
+  height: 55px;
+  border: 1px solid white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+}
+
+.main-footer .btn:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+
+
+
 
 
 
