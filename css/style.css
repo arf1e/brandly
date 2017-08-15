@@ -1,4 +1,4 @@
-/* REM CALCULATOR: 
+/* REM CALCULATOR:
 18
 48,19,30,60,40,45,16,36,14,50,70 */
 
@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
 }
 
@@ -106,9 +106,9 @@ nav li {
 }
 
 .btn {
-  box-sizing: border-box; 
-  /* Обращать внимание на маргины соседних 
-  элементов: будут больше, т.к. 
+  box-sizing: border-box;
+  /* Обращать внимание на маргины соседних
+  элементов: будут больше, т.к.
   границы теперь на тексте. */
   text-decoration: none;
   border: 2px solid white;
@@ -206,7 +206,7 @@ nav li {
 }
 
 main h2 {
-  position: relative; 
+  position: relative;
   font-weight: 300;
   font-style: italic;
   font-size: 2.222rem;
@@ -347,6 +347,12 @@ main h2::after {
 .trending {
   background-image: url(../img/trending-background.jpg);
   padding-top: 60px;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+.trending h2 {
+  margin-bottom: 80px;
 }
 
 .trending input[type="radio"] {
@@ -375,7 +381,7 @@ header .topic {
   margin-bottom: 30px;
 }
 
-header .collection, 
+header .collection,
 header .author {
   display: block; /* Я генста, я блочным делаю спан! Посмотри на мой код - я хулиган! */
   font-size: 0.8889rem;
@@ -486,6 +492,47 @@ label[for=size-xl] {
   color: white;
 }
 
+.shop-slider-controls {
+  position: absolute;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  bottom: 60px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.shop-slider-controls label {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #868686;
+  cursor: pointer;
+}
+
+#product-1:checked~ .shop-slider-controls label[for=product-1] {
+  background-color: transparent;
+  border: 2px solid #dc0000;
+}
+
+#product-2:checked~ .shop-slider-controls label[for=product-2] {
+  background-color: transparent;
+  border: 2px solid #dc0000;
+}
+
+#product-3:checked~ .shop-slider-controls label[for=product-3] {
+  background-color: transparent;
+  border: 2px solid #dc0000;
+}
+
+#product-4:checked~ .shop-slider-controls label[for=product-4] {
+  background-color: transparent;
+  border: 2px solid #dc0000;
+}
+
 .shopping-links {
   margin-top: 70px;
 }
@@ -495,6 +542,27 @@ label[for=size-xl] {
   color: white;
 }
 
+.trending-product {
+  display: none;
+}
+
+#product-1:checked~ .product-display .trending-product:first-of-type {
+  display: flex;
+}
+
+#product-2:checked~ .product-display .trending-product:nth-of-type(2) {
+  display: flex;
+}
+
+#product-3:checked~ .product-display .trending-product:nth-of-type(3) {
+  display: flex;
+}
+
+
+#product-4:checked~ .product-display .trending-product:nth-of-type(4) {
+  display: flex;
+}
+
 
 
 .main-footer {
@@ -502,7 +570,6 @@ label[for=size-xl] {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 
