@@ -165,7 +165,6 @@ nav li {
   position: relative;
 }
 
-
 #slide-1:checked~ .slider-controls label[for=slide-1] {
   background-color: transparent;
   width: 12px;
@@ -512,22 +511,97 @@ label[for=size-xl] {
   border-color: #dc0000;
 }
 
-#size-m:checked~ label[for="size-m"] {
+/*  Заставляем работать выбор размера для всех trending-product:
+--------------------------------------------------------------------- */
+
+/* Первый слайд:
+---------------- */
+
+#size-m-1:checked~ label[for="size-m-1"] {
   background-color: #333333;
   color: white;
 }
 
-#size-l:checked~ label[for="size-l"] {
+#size-l-1:checked~ label[for="size-l-1"] {
   background-color: #333333;
   color: white;
 }
 
-#size-xl:checked~ label[for="size-xl"] {
+#size-xl-1:checked~ label[for="size-xl-1"] {
   background-color: #333333;
   color: white;
 }
 
-#size-xxl:checked~ label[for="size-xxl"] {
+#size-xxl-1:checked~ label[for="size-xxl-1"] {
+  background-color: #333333;
+  color: white;
+}
+
+/* Второй слайд:
+---------------- */
+
+#size-m-2:checked~ label[for="size-m-2"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-l-2:checked~ label[for="size-l-2"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xl-2:checked~ label[for="size-xl-2"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xxl-2:checked~ label[for="size-xxl-2"] {
+  background-color: #333333;
+  color: white;
+}
+
+/* Третий слайд:
+---------------- */
+
+#size-m-3:checked~ label[for="size-m-3"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-l-3:checked~ label[for="size-l-3"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xl-3:checked~ label[for="size-xl-3"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xxl-3:checked~ label[for="size-xxl-3"] {
+  background-color: #333333;
+  color: white;
+}
+
+/* Четвертый слайд:
+---------------- */
+
+#size-m-4:checked~ label[for="size-m-4"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-l-4:checked~ label[for="size-l-4"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xl-4:checked~ label[for="size-xl-4"] {
+  background-color: #333333;
+  color: white;
+}
+
+#size-xxl-4:checked~ label[for="size-xxl-4"] {
   background-color: #333333;
   color: white;
 }
